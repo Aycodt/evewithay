@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div>
+        <div class="bowed"></div>
+        <a href="index.html"> <img src="images/evebanner3.jpg" width="25%" alt="Aycodt logo"> </a>
+    </div>
+    <div class="nav-link">
+        <i class="father christmas"></i>
+                <i class="santa clause"></i>
+                <i class="mother clause"></i>
+            </div>
+        <ul>
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="wish.html">Wish</a></li>
+            <li><a href="sooth.html">Sooth-Teller</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    <div id="container">
+
+        <h1>Discover Your Fortune!</h1>
+      
+        <button onclick="tellFortune()">Press to find out your fortune!</button>
+      
+        <button onclick="reset()">Reset</button>
+      
+        <br/><br/>
+      
+        <!--This is where the random text will go-->
+        <div id="fortune"></div>
+        <style>
+           
+        
+ body{
+  background: rgb(255, 193, 236);
+ 
+  color: white;
+  
+}
+
+#container
+{
+  border: 2px dotted white;
+  background-color:rgb(236, 219, 236);
+  margin: 20px;
+  padding: 10px;
+}
+
+#fortune
+{
+  border: 2px solid white;
+  background-color: rgb(250, 52, 102);
+  padding: 20px;
+}
+
+      </style>
+        
+<body>
+
+</body>
+<script>
+    var fortunes = [ "You will win a <em>million</em> dollars! Yay!",
+  "You will step on a piece of gum.",
+  "You will be attacked by a fluffy bunny.",
+  " you will buy a car ",
+  " bird will shit on your body",
+  " you will build a house"
+];
+function tellFortune() { var randomNumber = Math.floor(Math.random() * fortunes.length);
+    console.log("random number: " + randomNumber);
+    document.getElementById("fortune").innerHTML = fortunes[randomNumber];
+}
+function reset() { }
+</script>
+</html>
