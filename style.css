@@ -156,5 +156,9 @@ nav{
     color: white;
     font-size:500px;
 }
-
-
+i{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    padding: 15px;
+}

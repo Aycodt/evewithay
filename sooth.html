@@ -9,68 +9,79 @@
 </head>
 <body>
     <nav>
-        <div>
-        <div class="bowed"></div>
-        <a href="index.html"> <img src="images/evebanner3.jpg" width="25%" alt="Aycodt logo"> </a>
-    </div>
-    <div class="nav-link">
-        <i class="father christmas"></i>
-                <i class="santa clause"></i>
-                <i class="mother clause"></i>
-            </div>
-        <ul>
-            <li><a href="index.html">Welcome</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="wish.html">Wish</a></li>
-            <li><a href="sooth.html">Sooth-Teller</a></li>
-        </ul>
-    </div>
+        <div class="topnav">
+            <a href="index.html"> <img src="images/evebanner3.jpg" width="25%" alt="Aycodt logo"> </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-square"></i></a>
+           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"> <i class="fa fa-instagram"></i></a>
+           <a href="https://wa.me/?+2348134332575" target="_blank" rel="noopener noreferrer"> <i class="fa fa-whatsapp"></i></a>
+        </div>
+        <div class="nav-link">
+            <ul>
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="wish.html">Wish</a></li>
+                <li><a href="sooth.html">Sooth-Teller</a></li>
+            </ul>
+        </div>
     </nav>
 
     <div id="container">
-
-        <h1>Discover Your Fortune!</h1>
+        <br><br>
+        <h1>Discover Your Fortune!</h1><br><br>
       
+        <!--This is where the random text will go-->
+        <div id="fortune"></div>
+        <br>
         <button onclick="tellFortune()">Press to find out your fortune!</button>
-      
+        <br><br>
         <button onclick="reset()">Reset</button>
       
         <br/><br/>
       
-        <!--This is where the random text will go-->
-        <div id="fortune"></div>
-        <style>
-           
-        
+        <br>
+
+<style>        
  body{
-  background: rgb(255, 193, 236);
- 
-  color: white;
+    background-color: rgb(252, 236, 236);
+    color: white;
+    text-align: center;
   
 }
-
+h1{
+    color: black;
+}
 #container
 {
   border: 2px dotted white;
+  width: 70%;
   background-color:rgb(236, 219, 236);
-  margin: 20px;
+  margin: 30px auto;
   padding: 10px;
 }
 
 #fortune
 {
   border: 2px solid white;
-  background-color: rgb(250, 52, 102);
+  background-color: #fff;
   padding: 20px;
+  color: #000;
+}
+button{
+    background-color: gold;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
-      </style>
+</style>
         
-<body>
-
 </body>
 <script>
-    var fortunes = [ "You will win a <em>million</em> dollars! Yay!",
+    var fortunes = [ 
+  "You will win a <em>million</em> dollars! Yay!",
   "You will step on a piece of gum.",
   "You will be attacked by a fluffy bunny.",
   " you will buy a car ",
@@ -81,6 +92,8 @@ function tellFortune() { var randomNumber = Math.floor(Math.random() * fortunes.
     console.log("random number: " + randomNumber);
     document.getElementById("fortune").innerHTML = fortunes[randomNumber];
 }
-function reset() { }
+function reset() {
+    document.querySelector('#fortune').textContent = ''
+}
 </script>
 </html>
