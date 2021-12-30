@@ -22,6 +22,9 @@ nav{
     padding: 15px 50px;
     display: inline;
 }
+.topnav img{
+    width: 25%;
+}
 .nav-link{
     padding: 25px;
     width: 100%;
@@ -93,7 +96,7 @@ nav{
 }
 .newtitlen .divrow{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 footer{
     width: 100%;
@@ -103,6 +106,9 @@ footer{
     color: #fff;
     line-height: 15px;
     letter-spacing: 2px;
+}
+footer a img{
+    width: 8%;
 }
 footer p{
     text-align: center;
@@ -123,6 +129,8 @@ footer p{
     border: none;
     padding: 15px;
     font-size: 16px;
+    width: 95%;
+    margin: 0 auto;
 }
 .letswish form textarea:focus{
     border: gold;
@@ -161,4 +169,363 @@ i{
     color: white;
     font-weight: 700;
     padding: 15px;
+}
+
+
+
+
+
+/* Media Query for different screen size */
+
+@media (max-width: 830px) {
+    header{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        background-image:url(images/evebanner3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .topnav{
+        padding: 5px 10px;
+        display: block;
+    }
+    .topnav img{
+        width: 30%;
+    }
+    .topnav a i{
+        display: inline;
+    }
+    .nav-link{
+        padding: 18px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .nav-link ul li{
+        display: block;
+        list-style-type: none;
+        text-decoration: none;
+        margin: 2px 18px;
+    }
+    .nav-link ul li a ::after{
+        content: '';
+        height: 2px;
+        width: 0%;
+        background-color: gold;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    .nav-link :hover{ 
+        color: gold;
+        font-size: 25px;
+        width: 100%;
+    }
+    .nav-link ul li a{
+        color: white;
+        font-size: 22px;
+        font-weight: 900;
+        text-decoration: none;
+    }
+    .bannershow{
+        position: absolute;
+        left: 40%;
+        top: 75%;
+    }
+    .bannershow button a{
+        padding: 22px;
+        color: gold;
+        background-color: white;
+        font-size: 22px;
+        font-weight: 700;
+        border: none;
+        text-decoration: none;
+    }
+    .bannershow button a:hover{
+        color: white;
+        background-color: gold;
+    }
+    .newtitle{
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .divrow{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .divbox{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .newtitlen{
+        text-align: center;
+        width: 98%;
+        margin: 0 auto;
+    }
+    .newtitlen .divrow{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    footer{
+        width: 100%;
+        margin: 0px auto;
+        padding: 20px auto;
+        background-color: rgb(53, 18, 18);
+        color: #fff;
+        line-height: 15px;
+        letter-spacing: 2px;
+    }
+    footer a img{
+        width: 20%;
+    }
+    footer p{
+        text-align: center;
+    }
+    
+    
+    
+    .letswish{
+        width: 80%;
+        margin: 30px auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .letswish h1{
+        text-align: center;
+    }
+    .letswish form textarea{
+        border: none;
+        padding: 15px;
+        font-size: 16px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .letswish form textarea:focus{
+        border: gold;
+    }
+    .letswish form .sinput{
+        padding: 20px;
+        color: white;
+        background-color: gold;
+        font-size: 25px;
+        border: none;
+        text-decoration: none;
+    }
+    .letswish form .sinput:hover{
+        color: gold;
+        background-color: white;
+    }
+    .ninput{
+        width: 40%;
+        padding: 15px;
+        border: none;
+        font-size: 17px;
+    }
+    nav{
+        background-color: chocolate;
+    }
+    .bowed{
+        padding: 15px 50px;
+        display: inline;
+    }
+    .div{
+        color: white;
+        font-size:500px;
+    }
+    i{
+        font-size: 30px;
+        color: white;
+        font-weight: 700;
+        padding: 15px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    header{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        background-image:url(images/evebanner3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1.4fr;
+    }
+    .topnav{
+        padding: 5px 10px;
+        display: block;
+    }
+    .topnav img{
+        width: 50%;
+    }
+    .topnav a{
+        display: block;
+    }
+    .nav-link{
+        padding: 18px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .nav-link ul li{
+        display: block;
+        list-style-type: none;
+        text-decoration: none;
+        margin: 2px 18px;
+    }
+    .nav-link ul li a ::after{
+        content: '';
+        height: 2px;
+        width: 0%;
+        background-color: gold;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    .nav-link :hover{ 
+        color: gold;
+        font-size: 25px;
+        width: 100%;
+    }
+    .nav-link ul li a{
+        color: white;
+        font-size: 22px;
+        font-weight: 900;
+        text-decoration: none;
+    }
+    .bannershow{
+        position: absolute;
+        left: 30%;
+        top: 75%;
+    }
+    .bannershow button a{
+        padding: 12px;
+        color: gold;
+        background-color: white;
+        font-size: 18px;
+        border: none;
+        text-decoration: none;
+    }
+    .bannershow button a:hover{
+        color: white;
+        background-color: gold;
+    }
+    .newtitle{
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .divrow{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .divbox{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .newtitlen{
+        text-align: center;
+        width: 98%;
+        margin: 0 auto;
+    }
+    .newtitlen .divrow{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    footer{
+        width: 100%;
+        margin: 0px auto;
+        padding: 20px auto;
+        background-color: rgb(53, 18, 18);
+        color: #fff;
+        line-height: 15px;
+        letter-spacing: 2px;
+    }
+    footer a img{
+        width: 20%;
+    }
+    footer p{
+        text-align: center;
+    }
+    
+    
+    
+    .letswish{
+        width: 80%;
+        margin: 30px auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .letswish h1{
+        text-align: center;
+    }
+    .letswish form textarea{
+        border: none;
+        padding: 15px;
+        font-size: 16px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .letswish form textarea:focus{
+        border: gold;
+    }
+    .letswish form .sinput{
+        padding: 20px;
+        color: white;
+        background-color: gold;
+        font-size: 25px;
+        border: none;
+        text-decoration: none;
+    }
+    .letswish form .sinput:hover{
+        color: gold;
+        background-color: white;
+    }
+    .ninput{
+        width: 40%;
+        padding: 15px;
+        border: none;
+        font-size: 17px;
+    }
+    nav{
+        background-color: chocolate;
+    }
+    .bowed{
+        padding: 15px 50px;
+        display: inline;
+    }
+    .div{
+        color: white;
+        font-size:500px;
+    }
+    i{
+        font-size: 30px;
+        color: white;
+        font-weight: 700;
+        padding: 15px;
+    }
+    
 }
